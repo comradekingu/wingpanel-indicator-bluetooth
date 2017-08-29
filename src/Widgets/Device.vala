@@ -42,7 +42,7 @@ public class Bluetooth.Widgets.Device : Wingpanel.Widgets.Container {
         grid.attach (name_label, 1, 0, 2, 1);
         grid.attach (status_label, 1, 1, 1, 1);
         grid.attach (spinner, 2, 1, 1, 1);
-        get_content_widget ().add (grid);
+        content_widget.add (grid);
 
         clicked.connect (() => {
             if (!spinner.active) {
